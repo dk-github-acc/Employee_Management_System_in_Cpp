@@ -15,14 +15,14 @@ The source code is in file emp_man.cpp. Executable file can be created by comand
 The commands for gnuplot can be found in gnuplot_command.txt file.
 
 #The OOP concepts that were used in the project are -
-    1. Objects and encapsulation -data members and member functions.
-    2. Data Hiding - Private, Protected and Public access specifiers. Friend function.
-    3. Inheritance - Classes.
-    4. Polymorphism -Function overloading
-    5. Abstraction - Abstraction
-    6. Exception Handling - Try-throw-catch
-    7. Default parameters
-    8. Virtual functions
+1. Objects and encapsulation -data members and member functions.
+2. Data Hiding - Private, Protected and Public access specifiers. Friend function.
+3. Inheritance - Classes.
+4. Polymorphism -Function overloading
+5. Abstraction - Abstraction
+6. Exception Handling - Try-throw-catch
+7. Default parameters
+8. Virtual functions
 
 #FEATURES : 
 1. Login system-For both admin and employee. In both the above files, the login ID is taken as Employee Id, but password is different to login into admin and employee’s portal. An admin himself/herself is an employee of the company too, so an admin gets two different passwords to login into admin and employee portal.
