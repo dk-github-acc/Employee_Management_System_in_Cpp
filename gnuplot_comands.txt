@@ -1,0 +1,23 @@
+For graph using recruit.txt - 
+set xtics 10
+set ytics font ",8"
+set ytics 1
+set ytics font ",8"
+set xrange [2016:2022]
+set yrange [0:15]
+set title "STATS"   
+set xlabel "YEAR"
+set ylabel "RECRUIT NUMBER"
+
+set key autotitle columnheader
+
+stats "../DANESHWARIK_OOPS_PROJ/STATS/recruit.txt" using 0 nooutput
+
+plot for [i=0:(STATS_blocks - 1)] "../DANESHWARIK_OOPS_PROJ/STATS/recruit.txt" index i using 1:2  with linespoints pt 9 title columnheader(1)
+
+------------------------------------------
+For graph using position_count.txt - 
+
+plot for [i=0:(STATS_blocks - 1)] "../DANESHWARIK_OOPS_PROJ/STATS/position_count.txt" index i using 1:2  with linespoints pt 9 title columnheader(1)
+
+plot for [i=0:(STATS_blocks - 1)] "../DANESHWARIK_OOPS_PROJ/STATS/position_count.txt" index i using 1:3  with linespoints pt 9 title columnheader(1)
